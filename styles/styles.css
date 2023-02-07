@@ -1,3 +1,5 @@
+
+
 /* navbar */
 nav {
     height: 90px;
@@ -12,14 +14,15 @@ nav {
 }
 
 nav div {
-    margin: 0px 50px 0px 100px;
+    margin: 0px 50px 0px 150px;
 }
 
 /* Navbar imagen */
 nav div img {
     width: auto;
     height: 50px;
-    margin: 0px 0px 5px -60px;
+    margin: 0px 0px 5px;
+    align-items: center;
 }
 
 
@@ -43,7 +46,7 @@ nav div a:hover {
 }
 
 
-/* sección de imagen y aside*/
+/* sección de imagen */
 section {
     padding-top: 80px;
     display: flex;
@@ -52,40 +55,34 @@ section {
 }
 
 /* imagen */
-section div img {
+.imagenCV {
     width: auto;
     height: 200px;
-}
+    align-items: center;
+    margin-top: 20px;
+    border: 1px groove;
+    border-radius: 40%;
 
-
-/* aside */
-section aside {
-    border: 1px solid black;
-    width: 400px;
-    height: 200px;
-    margin-left: 40px;
-    text-align: center;
 }
 
 
 /* articulo */
 article {
     color: black;
-    margin:  5% 5% 10%;
-    height: 1000px;
-    background-color: rgb(234, 159, 67);
-    border-radius: 10%;
-    box-shadow: 10px 10px 10px 10px;
-    opacity: 0.5;
+    margin:  50px;
+    height: 700px;
+    background: #f68e51;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px;
+    opacity: 1;
 }
 
 article:hover {
     transition-duration: 1.5s;
     transition-timing-function: linear;
-    transition-delay: 0s;
-    background-color: rgb(232, 127, 0);
-    box-shadow: 30px 30px 30px 30px;
-    border: 5px solid black;
+    transition-delay: 1s;
+    background: linear-gradient(0deg, rgba(242,228,95,1) 0%, rgba(246,142,81,1) 94%);
+    box-shadow: 30px 30px 30px 20px;
 }
 
 article div {
@@ -93,8 +90,19 @@ article div {
     text-align: center;
 }
 
-article div h1 {
-    padding: 50px;
+/* tarjetas Section */
+.tarjetasSection div {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border: 2px groove rgb(109, 109, 109);
+    justify-content: space-between;
+    background-color: beige;
+}
+
+.tarjetaImagen {
+    width: 100%;
+    height: auto;
 }
 
 /* footer */

@@ -18,17 +18,12 @@
         <a href="#">Presentación</a>
         <a href="#">Estudios</a>
         <a href="#">Experiencia</a>
-        <a href="#">Contacto</a>
+        <a href="#">Contacto</a>v
     </div>
 </nav>
-
-    <section>
-        <div class="text-center">
-            <img src="img/51.jpg" class="rounded" alt="foto de CV">
-        </div>
-        <aside>
+      <!--   <aside>
             <h6>Habilidades</h6>
-            <ul>
+           <ul>
                 <li>Lenguajes Javascript, PHP, NodeJS, HTML5, CSS3</li>
                 <li>Idiomas español e inglés (B2)</li>
                 <li>Time management</li>
@@ -36,38 +31,44 @@
                 <li>Sketch design tool</li>
                 <li>Adobe Photoshop</li>
             </ul>
-        </aside>
-    </section>
+        </aside>  -->
 
-    <article>
-        <div class="presentacion_div">
-            <h1>Presentación</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur?</p>
-        </div>
-        <div class="estudios_div">
-            <h1>Estudios</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex?</p>
-        </div>
-        <div class="experiencia_div">
-            <h1>Experiencia</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus!</p>
-        </div>
-        <div class="contacto_div">
-            <h1>Contacto</h1>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Inserta tu nombre completo"><br>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Inserta tu Email"><br>
-            <label for="textarea">Mensaje</label>
-            <textarea id="textarea" placeholder="Escrbí un mensaje"></textarea>
-            <button type="boton_enviar">Enviar</button>
-        </div>
-    </article>
+<article id="presentacion">
+    <div class="text-center">
+        <img src="img/51.jpg" alt="foto de CV" class="imagenCV">
+    </div>
+    <div>
+        <h1>Presentación</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur?</p>
+    </div>
+    <button type="boton" id="botonPresentacion">Hacé click acá!</button>
+</article>
 
-    <footer>
-        <i>aca va un icono</i>
-    </footer>
+<section class="tarjetasSection">
+    <div class="estudios_div">
+        <img src="/img/estudiosimagen.jpg" alt="Imagen de estudios" class="tarjetaImagen">
+        <h1>Estudios</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex?</p>
+    </div>
 
+    <div class="experiencia_div">
+        <h1>Experiencia</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quo. Qui quisquam natus soluta repellendus!</p>
+        <img src="/img/trabajoImagen.jpg" alt="Imagen de experiencia" class="tarjetaImagen">
+    </div>
+</section>
+
+<form action="POST">
+    <label for="nombre">Nombre</label>
+    <input type="nombre" id="nombreCompleto" placeholder="ingresá tu nombre completo">
+    <button type="submit" id="boton">Enviar</button>
+</form>
+    
+<footer>
+    <img src="/img/IconoIn.png" alt="Icono">
+</footer>
+
+<script src="/index.js"></script>
 </body>
 
 </html>
