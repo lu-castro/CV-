@@ -57,37 +57,48 @@ section {
 /* imagen */
 .imagenCV {
     width: auto;
-    height: 200px;
+    height: 250px;
     align-items: center;
     margin-top: 20px;
     border: 1px groove;
     border-radius: 40%;
-
+    transition:all 1s ease-in-out;
 }
 
 
-/* articulo */
+/* ARTÍCULO DE PRESENTACIÓN*/
 article {
     color: black;
-    margin:  50px;
-    height: 700px;
-    background: #f68e51;
-    border-radius: 50%;
-    box-shadow: 10px 10px 10px;
+    margin: 30px;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(242,228,95,1) 0%, rgba(246,142,81,1) 94%);
     opacity: 1;
+    box-shadow: 5px  rgb(170, 169, 169);
+    transition:all 1s ease-in-out;
 }
 
 article:hover {
-    transition-duration: 1.5s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
-    background: linear-gradient(0deg, rgba(242,228,95,1) 0%, rgba(246,142,81,1) 94%);
-    box-shadow: 30px 30px 30px 20px;
+    box-shadow: 10px 10px 10px 10px gray;
 }
+
 
 article div {
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+/* TEXTO DEL ARTÍCULO DE PRESENTACIÓN */
+article .presentacionDiv {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    transition:all 1s ease-in-out;
+}
+
+article .presentacionDiv:hover {
+    color: white;
+    cursor: grab;
 }
 
 /* tarjetas Section */
@@ -98,12 +109,15 @@ article div {
     border: 2px groove rgb(109, 109, 109);
     justify-content: space-between;
     background-color: beige;
+    transition:all 1s ease-in-out;
 }
 
 .tarjetaImagen {
     width: 100%;
     height: auto;
+    margin-top: 50px;
 }
+
 
 /* FORMULARIO */
 form {
