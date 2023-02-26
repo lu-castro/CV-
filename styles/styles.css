@@ -38,6 +38,7 @@ nav div a {
     transition:all 1s;
 }  
 
+
 nav div a :hover {
     color: white;
 }
