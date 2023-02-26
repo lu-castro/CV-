@@ -1,5 +1,3 @@
-
-
 /* NAVBAR*/
 nav {
     height: 90px;
@@ -37,12 +35,11 @@ nav div a {
     padding: 60px;
     color: rgb(104, 103, 103);
     text-decoration: none;
+    transition:all 1s;
+}  
 
-}
-
-nav div a:hover {
+nav div a :hover {
     color: white;
-    transition: 1s;
 }
 
 /* IMAGEN DEL CV */
@@ -101,6 +98,7 @@ article .presentacionDiv:hover {
 .tarjetasSection {
     padding: 40px;
     display: flex;
+    transition:all 1s ease-in-out;
 }
 
 .tarjetasSection div {
@@ -109,6 +107,7 @@ article .presentacionDiv:hover {
     margin: auto;
     border: 2px solid rgb(131, 131, 131);
     background-color: beige;
+    box-shadow: 10px 10px 10px 10px gray;
     transition:all 1s ease-in-out;
 }
 
@@ -131,7 +130,14 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-  }
+    box-shadow: 5px  rgb(170, 169, 169);
+    transition:all 1s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
   
 ul {
     list-style: none;
